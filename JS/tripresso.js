@@ -11,7 +11,7 @@ let dayMore=document.querySelector("#dayMore");
 
 let data=[];
 let loc=new XMLHttpRequest();
-loc.open("get","http://interview.tripresso.com/tour/search");
+loc.open("get","https://interview.tripresso.com/tour/search");
 loc.send();
 loc.onload=function(){
     let datas=JSON.parse(loc.responseText);
